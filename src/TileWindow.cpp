@@ -74,4 +74,4 @@ void TileWindow::loadTile(const QImage& image, TileSetSize tss)
     setVisible(true);
 }
 
-#include "TileWindow.moc"
+#include "../moc/TileWindow.moc"

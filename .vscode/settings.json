@@ -3,6 +3,7 @@
         "qwidget": "cpp",
         "qlineedit": "cpp",
         "qgraphicsscene": "cpp",
-        "qgraphicsview": "cpp"
+        "qgraphicsview": "cpp",
+        "*.moc": "cpp"
     }
 }

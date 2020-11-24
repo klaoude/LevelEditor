@@ -43,4 +43,4 @@ void Tile::mousePressEvent(QMouseEvent* event)
     setStyleSheet("border: 2px solid Red");
 }
 
-#include "Tile.moc"
+#include "../moc/Tile.moc"

@@ -2,7 +2,7 @@
 
 MainWindow::MainWindow() : QMainWindow()
 {
-    setFixedSize(1920, 1080);
+    setFixedSize(800, 600);
 
     createDockWindows();
 
@@ -20,8 +20,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::OpenTileSet()
 {
-    //QString fichier = QFileDialog::getOpenFileName(this, "Open TileSet", QString(), "Images (*.png *.gif *.jpg *.jpeg)");
-    QString fichier = "/home/klaoude/Documents/Code/testEngine/bin/Textures/TileSet.png";
+    QString fichier = QFileDialog::getOpenFileName(this, "Open TileSet", QString(), "Images (*.png *.gif *.jpg *.jpeg)");
+    //QString fichier = "/home/klaoude/Documents/Code/testEngine/bin/Textures/TileSet.png";
     m_tileWindow->LoadFile(fichier);
 }
 
@@ -62,4 +62,4 @@ void MainWindow::createMenu()
     QMenu* menuView = menuBar()->addMenu("&View");
 }
 
-#include "MainWindow.moc"
+#include "../moc/MainWindow.moc"

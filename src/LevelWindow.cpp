@@ -40,4 +40,4 @@ void LevelWindow::mousePressEvent(QMouseEvent* event)
     m_scene->addItem(item);
 }
 
-#include "LevelWindow.moc"
+#include "../moc/LevelWindow.moc"
