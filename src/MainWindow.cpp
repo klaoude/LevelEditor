@@ -51,13 +51,13 @@ void MainWindow::createMenu()
     QAction* actionQuit = new QAction("&Quit", this);
     menuFile->addAction(actionOpenTileSet);
     menuFile->addAction(actionQuit);
-    connect(actionOpenTileSet, SIGNAL(triggered()), this, SLOT(OpenTileSet()));
-    connect(actionQuit, SIGNAL(triggered()), qApp, SLOT(quit()));
+    connect(actionOpenTileSet, &QAction::triggered, this, &MainWindow::OpenTileSet);
+    connect(actionQuit, &QAction::triggered, qApp, SLOT(quit()));
 
     QMenu* menuEdit = menuBar()->addMenu("&Edit");
     QAction* actionDebug = new QAction("&Debug", this);
     menuEdit->addAction(actionDebug);
-    connect(actionDebug, SIGNAL(triggered()), this, SLOT(Debug()));
+    connect(actionDebug, &QAction::triggered, this, &MainWindow::Debug);
 
     QMenu* menuView = menuBar()->addMenu("&View");
 }

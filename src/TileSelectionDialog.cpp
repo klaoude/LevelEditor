@@ -36,10 +36,7 @@ TileSelectionDialog::TileSelectionDialog() : QDialog()
 
     layout()->addWidget(widget);
 
-    connect(ok, &QPushButton::clicked, this, [this]()
-    {
-        accept();
-    });
+    connect(ok, &QPushButton::clicked, this, [=](){ accept(); });
 }
 
 TileSelectionDialog::~TileSelectionDialog()
